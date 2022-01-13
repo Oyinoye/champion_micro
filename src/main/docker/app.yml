@@ -1,8 +1,8 @@
 version: '3.8'
 services:
-  maxapp-app:
+  champion-app:
     build: ../../..
-    container_name: maxapp-app
+    container_name: champion-app
     environment:
       env_file: .env
     ports:

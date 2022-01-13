@@ -2,7 +2,7 @@
   "name": "max-app",
   "version": "0.0.1-SNAPSHOT",
   "private": true,
-  "description": "Description for maxApp",
+  "description": "Description for champion",
   "license": "UNLICENSED",
   "scripts": {
     "prettier:check": "prettier --check \"{,src/**/,webpack/}*.{md,json,yml,html,js,ts,tsx,css,scss,java}\"",

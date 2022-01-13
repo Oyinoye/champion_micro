@@ -26,16 +26,16 @@ export const DriverLicense = (props: IDriverLicenseProps) => {
   return (
     <div>
       <h2 id="driver-license-heading" data-cy="DriverLicenseHeading">
-        <Translate contentKey="maxApp.driverLicense.home.title">Driver Licenses</Translate>
+        <Translate contentKey="champion.driverLicense.home.title">Driver Licenses</Translate>
         <div className="d-flex justify-content-end">
           <Button className="mr-2" color="info" onClick={handleSyncList} disabled={loading}>
             <FontAwesomeIcon icon="sync" spin={loading} />{' '}
-            <Translate contentKey="maxApp.driverLicense.home.refreshListLabel">Refresh List</Translate>
+            <Translate contentKey="champion.driverLicense.home.refreshListLabel">Refresh List</Translate>
           </Button>
           <Link to={`${match.url}/new`} className="btn btn-primary jh-create-entity" id="jh-create-entity" data-cy="entityCreateButton">
             <FontAwesomeIcon icon="plus" />
             &nbsp;
-            <Translate contentKey="maxApp.driverLicense.home.createLabel">Create new Driver License</Translate>
+            <Translate contentKey="champion.driverLicense.home.createLabel">Create new Driver License</Translate>
           </Link>
         </div>
       </h2>
@@ -45,25 +45,25 @@ export const DriverLicense = (props: IDriverLicenseProps) => {
             <thead>
               <tr>
                 <th>
-                  <Translate contentKey="maxApp.driverLicense.id">ID</Translate>
+                  <Translate contentKey="champion.driverLicense.id">ID</Translate>
                 </th>
                 <th>
-                  <Translate contentKey="maxApp.driverLicense.licenseNumber">License Number</Translate>
+                  <Translate contentKey="champion.driverLicense.licenseNumber">License Number</Translate>
                 </th>
                 <th>
-                  <Translate contentKey="maxApp.driverLicense.issueDate">Issue Date</Translate>
+                  <Translate contentKey="champion.driverLicense.issueDate">Issue Date</Translate>
                 </th>
                 <th>
-                  <Translate contentKey="maxApp.driverLicense.expiryDate">Expiry Date</Translate>
+                  <Translate contentKey="champion.driverLicense.expiryDate">Expiry Date</Translate>
                 </th>
                 <th>
-                  <Translate contentKey="maxApp.driverLicense.address">Address</Translate>
+                  <Translate contentKey="champion.driverLicense.address">Address</Translate>
                 </th>
                 <th>
-                  <Translate contentKey="maxApp.driverLicense.comment">Comment</Translate>
+                  <Translate contentKey="champion.driverLicense.comment">Comment</Translate>
                 </th>
                 <th>
-                  <Translate contentKey="maxApp.driverLicense.champion">Champion</Translate>
+                  <Translate contentKey="champion.driverLicense.champion">Champion</Translate>
                 </th>
                 <th />
               </tr>
@@ -131,7 +131,7 @@ export const DriverLicense = (props: IDriverLicenseProps) => {
         ) : (
           !loading && (
             <div className="alert alert-warning">
-              <Translate contentKey="maxApp.driverLicense.home.notFound">No Driver Licenses found</Translate>
+              <Translate contentKey="champion.driverLicense.home.notFound">No Driver Licenses found</Translate>
             </div>
           )
         )}

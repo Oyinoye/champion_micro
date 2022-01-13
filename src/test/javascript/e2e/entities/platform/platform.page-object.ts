@@ -9,7 +9,7 @@ import PlatformUpdatePage from './platform-update.page-object';
 const expect = chai.expect;
 export class PlatformDeleteDialog {
   deleteModal = element(by.className('modal'));
-  private dialogTitle: ElementFinder = element(by.id('maxApp.platform.delete.question'));
+  private dialogTitle: ElementFinder = element(by.id('champion.platform.delete.question'));
   private confirmButton = element(by.id('jhi-confirm-delete-platform'));
 
   getDialogTitle() {
@@ -59,7 +59,7 @@ export default class PlatformComponentsPage {
 
     const platformDeleteDialog = new PlatformDeleteDialog();
     await waitUntilDisplayed(platformDeleteDialog.deleteModal);
-    expect(await platformDeleteDialog.getDialogTitle().getAttribute('id')).to.match(/maxApp.platform.delete.question/);
+    expect(await platformDeleteDialog.getDialogTitle().getAttribute('id')).to.match(/champion.platform.delete.question/);
     await platformDeleteDialog.clickOnConfirmButton();
 
     await waitUntilHidden(platformDeleteDialog.deleteModal);

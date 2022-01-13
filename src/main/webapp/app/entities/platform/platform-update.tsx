@@ -56,8 +56,8 @@ export const PlatformUpdate = (props: IPlatformUpdateProps) => {
     <div>
       <Row className="justify-content-center">
         <Col md="8">
-          <h2 id="maxApp.platform.home.createOrEditLabel" data-cy="PlatformCreateUpdateHeading">
-            <Translate contentKey="maxApp.platform.home.createOrEditLabel">Create or edit a Platform</Translate>
+          <h2 id="champion.platform.home.createOrEditLabel" data-cy="PlatformCreateUpdateHeading">
+            <Translate contentKey="champion.platform.home.createOrEditLabel">Create or edit a Platform</Translate>
           </h2>
         </Col>
       </Row>
@@ -77,13 +77,13 @@ export const PlatformUpdate = (props: IPlatformUpdateProps) => {
               ) : null}
               <AvGroup>
                 <Label id="codeLabel" for="platform-code">
-                  <Translate contentKey="maxApp.platform.code">Code</Translate>
+                  <Translate contentKey="champion.platform.code">Code</Translate>
                 </Label>
                 <AvField id="platform-code" data-cy="code" type="text" name="code" />
               </AvGroup>
               <AvGroup>
                 <Label id="descriptionLabel" for="platform-description">
-                  <Translate contentKey="maxApp.platform.description">Description</Translate>
+                  <Translate contentKey="champion.platform.description">Description</Translate>
                 </Label>
                 <AvField id="platform-description" data-cy="description" type="text" name="description" />
               </AvGroup>

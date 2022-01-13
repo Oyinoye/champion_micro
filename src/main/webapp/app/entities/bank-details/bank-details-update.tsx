@@ -61,8 +61,8 @@ export const BankDetailsUpdate = (props: IBankDetailsUpdateProps) => {
     <div>
       <Row className="justify-content-center">
         <Col md="8">
-          <h2 id="maxApp.bankDetails.home.createOrEditLabel" data-cy="BankDetailsCreateUpdateHeading">
-            <Translate contentKey="maxApp.bankDetails.home.createOrEditLabel">Create or edit a BankDetails</Translate>
+          <h2 id="champion.bankDetails.home.createOrEditLabel" data-cy="BankDetailsCreateUpdateHeading">
+            <Translate contentKey="champion.bankDetails.home.createOrEditLabel">Create or edit a BankDetails</Translate>
           </h2>
         </Col>
       </Row>
@@ -82,19 +82,19 @@ export const BankDetailsUpdate = (props: IBankDetailsUpdateProps) => {
               ) : null}
               <AvGroup>
                 <Label id="bankNameLabel" for="bank-details-bankName">
-                  <Translate contentKey="maxApp.bankDetails.bankName">Bank Name</Translate>
+                  <Translate contentKey="champion.bankDetails.bankName">Bank Name</Translate>
                 </Label>
                 <AvField id="bank-details-bankName" data-cy="bankName" type="text" name="bankName" />
               </AvGroup>
               <AvGroup>
                 <Label id="accountNumberLabel" for="bank-details-accountNumber">
-                  <Translate contentKey="maxApp.bankDetails.accountNumber">Account Number</Translate>
+                  <Translate contentKey="champion.bankDetails.accountNumber">Account Number</Translate>
                 </Label>
                 <AvField id="bank-details-accountNumber" data-cy="accountNumber" type="text" name="accountNumber" />
               </AvGroup>
               <AvGroup>
                 <Label for="bank-details-champion">
-                  <Translate contentKey="maxApp.bankDetails.champion">Champion</Translate>
+                  <Translate contentKey="champion.bankDetails.champion">Champion</Translate>
                 </Label>
                 <AvInput id="bank-details-champion" data-cy="champion" type="select" className="form-control" name="championId">
                   <option value="" key="0" />

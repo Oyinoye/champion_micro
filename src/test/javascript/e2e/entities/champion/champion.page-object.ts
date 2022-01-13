@@ -9,7 +9,7 @@ import ChampionUpdatePage from './champion-update.page-object';
 const expect = chai.expect;
 export class ChampionDeleteDialog {
   deleteModal = element(by.className('modal'));
-  private dialogTitle: ElementFinder = element(by.id('maxApp.champion.delete.question'));
+  private dialogTitle: ElementFinder = element(by.id('champion.champion.delete.question'));
   private confirmButton = element(by.id('jhi-confirm-delete-champion'));
 
   getDialogTitle() {
@@ -59,7 +59,7 @@ export default class ChampionComponentsPage {
 
     const championDeleteDialog = new ChampionDeleteDialog();
     await waitUntilDisplayed(championDeleteDialog.deleteModal);
-    expect(await championDeleteDialog.getDialogTitle().getAttribute('id')).to.match(/maxApp.champion.delete.question/);
+    expect(await championDeleteDialog.getDialogTitle().getAttribute('id')).to.match(/champion.champion.delete.question/);
     await championDeleteDialog.clickOnConfirmButton();
 
     await waitUntilHidden(championDeleteDialog.deleteModal);

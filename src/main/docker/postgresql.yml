@@ -1,13 +1,13 @@
 version: '3.8'
 services:
-  maxapp-postgresql:
+  champion-postgresql:
     image: postgres:13.2
     volumes:
-      - ~/volumes/jhipster/maxApp/postgresql/:/var/lib/postgresql/data/
+      - ~/volumes/jhipster/champion/postgresql/:/var/lib/postgresql/data/
     environment:
       - POSTGRES_USER=sa
       - POSTGRES_PASSWORD=yourStrong(!)Password
-      - POSTGRES_DB=maxapp
+      - POSTGRES_DB=champion
       - POSTGRES_HOST_AUTH_METHOD=trust
     ports:
       - 5433:5432

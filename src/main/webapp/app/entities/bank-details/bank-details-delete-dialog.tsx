@@ -35,8 +35,8 @@ export const BankDetailsDeleteDialog = (props: IBankDetailsDeleteDialogProps) =>
       <ModalHeader toggle={handleClose} data-cy="bankDetailsDeleteDialogHeading">
         <Translate contentKey="entity.delete.title">Confirm delete operation</Translate>
       </ModalHeader>
-      <ModalBody id="maxApp.bankDetails.delete.question">
-        <Translate contentKey="maxApp.bankDetails.delete.question" interpolate={{ id: bankDetailsEntity.id }}>
+      <ModalBody id="champion.bankDetails.delete.question">
+        <Translate contentKey="champion.bankDetails.delete.question" interpolate={{ id: bankDetailsEntity.id }}>
           Are you sure you want to delete this BankDetails?
         </Translate>
       </ModalBody>

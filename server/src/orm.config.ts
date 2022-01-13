@@ -27,7 +27,7 @@ function ormConfig(): TypeOrmModuleOptions {
         ormconfig = {
             name: 'default',
             type: 'postgres',
-            database: 'maxapp',
+            database: 'champion',
             host: 'localhost',
             port: 5433,
             username: 'sa',

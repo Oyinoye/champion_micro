@@ -9,7 +9,7 @@ import GuarantorUpdatePage from './guarantor-update.page-object';
 const expect = chai.expect;
 export class GuarantorDeleteDialog {
   deleteModal = element(by.className('modal'));
-  private dialogTitle: ElementFinder = element(by.id('maxApp.guarantor.delete.question'));
+  private dialogTitle: ElementFinder = element(by.id('champion.guarantor.delete.question'));
   private confirmButton = element(by.id('jhi-confirm-delete-guarantor'));
 
   getDialogTitle() {
@@ -59,7 +59,7 @@ export default class GuarantorComponentsPage {
 
     const guarantorDeleteDialog = new GuarantorDeleteDialog();
     await waitUntilDisplayed(guarantorDeleteDialog.deleteModal);
-    expect(await guarantorDeleteDialog.getDialogTitle().getAttribute('id')).to.match(/maxApp.guarantor.delete.question/);
+    expect(await guarantorDeleteDialog.getDialogTitle().getAttribute('id')).to.match(/champion.guarantor.delete.question/);
     await guarantorDeleteDialog.clickOnConfirmButton();
 
     await waitUntilHidden(guarantorDeleteDialog.deleteModal);

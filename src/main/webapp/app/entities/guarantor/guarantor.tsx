@@ -26,16 +26,16 @@ export const Guarantor = (props: IGuarantorProps) => {
   return (
     <div>
       <h2 id="guarantor-heading" data-cy="GuarantorHeading">
-        <Translate contentKey="maxApp.guarantor.home.title">Guarantors</Translate>
+        <Translate contentKey="champion.guarantor.home.title">Guarantors</Translate>
         <div className="d-flex justify-content-end">
           <Button className="mr-2" color="info" onClick={handleSyncList} disabled={loading}>
             <FontAwesomeIcon icon="sync" spin={loading} />{' '}
-            <Translate contentKey="maxApp.guarantor.home.refreshListLabel">Refresh List</Translate>
+            <Translate contentKey="champion.guarantor.home.refreshListLabel">Refresh List</Translate>
           </Button>
           <Link to={`${match.url}/new`} className="btn btn-primary jh-create-entity" id="jh-create-entity" data-cy="entityCreateButton">
             <FontAwesomeIcon icon="plus" />
             &nbsp;
-            <Translate contentKey="maxApp.guarantor.home.createLabel">Create new Guarantor</Translate>
+            <Translate contentKey="champion.guarantor.home.createLabel">Create new Guarantor</Translate>
           </Link>
         </div>
       </h2>
@@ -45,40 +45,40 @@ export const Guarantor = (props: IGuarantorProps) => {
             <thead>
               <tr>
                 <th>
-                  <Translate contentKey="maxApp.guarantor.id">ID</Translate>
+                  <Translate contentKey="champion.guarantor.id">ID</Translate>
                 </th>
                 <th>
-                  <Translate contentKey="maxApp.guarantor.firstName">First Name</Translate>
+                  <Translate contentKey="champion.guarantor.firstName">First Name</Translate>
                 </th>
                 <th>
-                  <Translate contentKey="maxApp.guarantor.lastName">Last Name</Translate>
+                  <Translate contentKey="champion.guarantor.lastName">Last Name</Translate>
                 </th>
                 <th>
-                  <Translate contentKey="maxApp.guarantor.dateOfBirth">Date Of Birth</Translate>
+                  <Translate contentKey="champion.guarantor.dateOfBirth">Date Of Birth</Translate>
                 </th>
                 <th>
-                  <Translate contentKey="maxApp.guarantor.relationship">Relationship</Translate>
+                  <Translate contentKey="champion.guarantor.relationship">Relationship</Translate>
                 </th>
                 <th>
-                  <Translate contentKey="maxApp.guarantor.knowHowLong">Know How Long</Translate>
+                  <Translate contentKey="champion.guarantor.knowHowLong">Know How Long</Translate>
                 </th>
                 <th>
-                  <Translate contentKey="maxApp.guarantor.occupation">Occupation</Translate>
+                  <Translate contentKey="champion.guarantor.occupation">Occupation</Translate>
                 </th>
                 <th>
-                  <Translate contentKey="maxApp.guarantor.homeAddress">Home Address</Translate>
+                  <Translate contentKey="champion.guarantor.homeAddress">Home Address</Translate>
                 </th>
                 <th>
-                  <Translate contentKey="maxApp.guarantor.officeAddress">Office Address</Translate>
+                  <Translate contentKey="champion.guarantor.officeAddress">Office Address</Translate>
                 </th>
                 <th>
-                  <Translate contentKey="maxApp.guarantor.utilityUpload">Utility Upload</Translate>
+                  <Translate contentKey="champion.guarantor.utilityUpload">Utility Upload</Translate>
                 </th>
                 <th>
-                  <Translate contentKey="maxApp.guarantor.idUpload">Id Upload</Translate>
+                  <Translate contentKey="champion.guarantor.idUpload">Id Upload</Translate>
                 </th>
                 <th>
-                  <Translate contentKey="maxApp.guarantor.champion">Champion</Translate>
+                  <Translate contentKey="champion.guarantor.champion">Champion</Translate>
                 </th>
                 <th />
               </tr>
@@ -164,7 +164,7 @@ export const Guarantor = (props: IGuarantorProps) => {
         ) : (
           !loading && (
             <div className="alert alert-warning">
-              <Translate contentKey="maxApp.guarantor.home.notFound">No Guarantors found</Translate>
+              <Translate contentKey="champion.guarantor.home.notFound">No Guarantors found</Translate>
             </div>
           )
         )}

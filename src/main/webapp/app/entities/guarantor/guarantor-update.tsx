@@ -71,8 +71,8 @@ export const GuarantorUpdate = (props: IGuarantorUpdateProps) => {
     <div>
       <Row className="justify-content-center">
         <Col md="8">
-          <h2 id="maxApp.guarantor.home.createOrEditLabel" data-cy="GuarantorCreateUpdateHeading">
-            <Translate contentKey="maxApp.guarantor.home.createOrEditLabel">Create or edit a Guarantor</Translate>
+          <h2 id="champion.guarantor.home.createOrEditLabel" data-cy="GuarantorCreateUpdateHeading">
+            <Translate contentKey="champion.guarantor.home.createOrEditLabel">Create or edit a Guarantor</Translate>
           </h2>
         </Col>
       </Row>
@@ -92,56 +92,56 @@ export const GuarantorUpdate = (props: IGuarantorUpdateProps) => {
               ) : null}
               <AvGroup>
                 <Label id="firstNameLabel" for="guarantor-firstName">
-                  <Translate contentKey="maxApp.guarantor.firstName">First Name</Translate>
+                  <Translate contentKey="champion.guarantor.firstName">First Name</Translate>
                 </Label>
                 <AvField id="guarantor-firstName" data-cy="firstName" type="text" name="firstName" />
               </AvGroup>
               <AvGroup>
                 <Label id="lastNameLabel" for="guarantor-lastName">
-                  <Translate contentKey="maxApp.guarantor.lastName">Last Name</Translate>
+                  <Translate contentKey="champion.guarantor.lastName">Last Name</Translate>
                 </Label>
                 <AvField id="guarantor-lastName" data-cy="lastName" type="text" name="lastName" />
               </AvGroup>
               <AvGroup>
                 <Label id="dateOfBirthLabel" for="guarantor-dateOfBirth">
-                  <Translate contentKey="maxApp.guarantor.dateOfBirth">Date Of Birth</Translate>
+                  <Translate contentKey="champion.guarantor.dateOfBirth">Date Of Birth</Translate>
                 </Label>
                 <AvField id="guarantor-dateOfBirth" data-cy="dateOfBirth" type="date" className="form-control" name="dateOfBirth" />
               </AvGroup>
               <AvGroup>
                 <Label id="relationshipLabel" for="guarantor-relationship">
-                  <Translate contentKey="maxApp.guarantor.relationship">Relationship</Translate>
+                  <Translate contentKey="champion.guarantor.relationship">Relationship</Translate>
                 </Label>
                 <AvField id="guarantor-relationship" data-cy="relationship" type="text" name="relationship" />
               </AvGroup>
               <AvGroup>
                 <Label id="knowHowLongLabel" for="guarantor-knowHowLong">
-                  <Translate contentKey="maxApp.guarantor.knowHowLong">Know How Long</Translate>
+                  <Translate contentKey="champion.guarantor.knowHowLong">Know How Long</Translate>
                 </Label>
                 <AvField id="guarantor-knowHowLong" data-cy="knowHowLong" type="text" name="knowHowLong" />
               </AvGroup>
               <AvGroup>
                 <Label id="occupationLabel" for="guarantor-occupation">
-                  <Translate contentKey="maxApp.guarantor.occupation">Occupation</Translate>
+                  <Translate contentKey="champion.guarantor.occupation">Occupation</Translate>
                 </Label>
                 <AvField id="guarantor-occupation" data-cy="occupation" type="text" name="occupation" />
               </AvGroup>
               <AvGroup>
                 <Label id="homeAddressLabel" for="guarantor-homeAddress">
-                  <Translate contentKey="maxApp.guarantor.homeAddress">Home Address</Translate>
+                  <Translate contentKey="champion.guarantor.homeAddress">Home Address</Translate>
                 </Label>
                 <AvField id="guarantor-homeAddress" data-cy="homeAddress" type="text" name="homeAddress" />
               </AvGroup>
               <AvGroup>
                 <Label id="officeAddressLabel" for="guarantor-officeAddress">
-                  <Translate contentKey="maxApp.guarantor.officeAddress">Office Address</Translate>
+                  <Translate contentKey="champion.guarantor.officeAddress">Office Address</Translate>
                 </Label>
                 <AvField id="guarantor-officeAddress" data-cy="officeAddress" type="text" name="officeAddress" />
               </AvGroup>
               <AvGroup>
                 <AvGroup>
                   <Label id="utilityUploadLabel" for="utilityUpload">
-                    <Translate contentKey="maxApp.guarantor.utilityUpload">Utility Upload</Translate>
+                    <Translate contentKey="champion.guarantor.utilityUpload">Utility Upload</Translate>
                   </Label>
                   <br />
                   {utilityUpload ? (
@@ -179,7 +179,7 @@ export const GuarantorUpdate = (props: IGuarantorUpdateProps) => {
               <AvGroup>
                 <AvGroup>
                   <Label id="idUploadLabel" for="idUpload">
-                    <Translate contentKey="maxApp.guarantor.idUpload">Id Upload</Translate>
+                    <Translate contentKey="champion.guarantor.idUpload">Id Upload</Translate>
                   </Label>
                   <br />
                   {idUpload ? (
@@ -210,7 +210,7 @@ export const GuarantorUpdate = (props: IGuarantorUpdateProps) => {
               </AvGroup>
               <AvGroup>
                 <Label for="guarantor-champion">
-                  <Translate contentKey="maxApp.guarantor.champion">Champion</Translate>
+                  <Translate contentKey="champion.guarantor.champion">Champion</Translate>
                 </Label>
                 <AvInput id="guarantor-champion" data-cy="champion" type="select" className="form-control" name="championId" required>
                   <option value="" key="0" />

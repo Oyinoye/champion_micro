@@ -61,8 +61,8 @@ export const DriverLicenseUpdate = (props: IDriverLicenseUpdateProps) => {
     <div>
       <Row className="justify-content-center">
         <Col md="8">
-          <h2 id="maxApp.driverLicense.home.createOrEditLabel" data-cy="DriverLicenseCreateUpdateHeading">
-            <Translate contentKey="maxApp.driverLicense.home.createOrEditLabel">Create or edit a DriverLicense</Translate>
+          <h2 id="champion.driverLicense.home.createOrEditLabel" data-cy="DriverLicenseCreateUpdateHeading">
+            <Translate contentKey="champion.driverLicense.home.createOrEditLabel">Create or edit a DriverLicense</Translate>
           </h2>
         </Col>
       </Row>
@@ -82,37 +82,37 @@ export const DriverLicenseUpdate = (props: IDriverLicenseUpdateProps) => {
               ) : null}
               <AvGroup>
                 <Label id="licenseNumberLabel" for="driver-license-licenseNumber">
-                  <Translate contentKey="maxApp.driverLicense.licenseNumber">License Number</Translate>
+                  <Translate contentKey="champion.driverLicense.licenseNumber">License Number</Translate>
                 </Label>
                 <AvField id="driver-license-licenseNumber" data-cy="licenseNumber" type="text" name="licenseNumber" />
               </AvGroup>
               <AvGroup>
                 <Label id="issueDateLabel" for="driver-license-issueDate">
-                  <Translate contentKey="maxApp.driverLicense.issueDate">Issue Date</Translate>
+                  <Translate contentKey="champion.driverLicense.issueDate">Issue Date</Translate>
                 </Label>
                 <AvField id="driver-license-issueDate" data-cy="issueDate" type="date" className="form-control" name="issueDate" />
               </AvGroup>
               <AvGroup>
                 <Label id="expiryDateLabel" for="driver-license-expiryDate">
-                  <Translate contentKey="maxApp.driverLicense.expiryDate">Expiry Date</Translate>
+                  <Translate contentKey="champion.driverLicense.expiryDate">Expiry Date</Translate>
                 </Label>
                 <AvField id="driver-license-expiryDate" data-cy="expiryDate" type="date" className="form-control" name="expiryDate" />
               </AvGroup>
               <AvGroup>
                 <Label id="addressLabel" for="driver-license-address">
-                  <Translate contentKey="maxApp.driverLicense.address">Address</Translate>
+                  <Translate contentKey="champion.driverLicense.address">Address</Translate>
                 </Label>
                 <AvField id="driver-license-address" data-cy="address" type="text" name="address" />
               </AvGroup>
               <AvGroup>
                 <Label id="commentLabel" for="driver-license-comment">
-                  <Translate contentKey="maxApp.driverLicense.comment">Comment</Translate>
+                  <Translate contentKey="champion.driverLicense.comment">Comment</Translate>
                 </Label>
                 <AvField id="driver-license-comment" data-cy="comment" type="text" name="comment" />
               </AvGroup>
               <AvGroup>
                 <Label for="driver-license-champion">
-                  <Translate contentKey="maxApp.driverLicense.champion">Champion</Translate>
+                  <Translate contentKey="champion.driverLicense.champion">Champion</Translate>
                 </Label>
                 <AvInput id="driver-license-champion" data-cy="champion" type="select" className="form-control" name="championId" required>
                   <option value="" key="0" />

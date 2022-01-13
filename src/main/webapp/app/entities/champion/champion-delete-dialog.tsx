@@ -35,8 +35,8 @@ export const ChampionDeleteDialog = (props: IChampionDeleteDialogProps) => {
       <ModalHeader toggle={handleClose} data-cy="championDeleteDialogHeading">
         <Translate contentKey="entity.delete.title">Confirm delete operation</Translate>
       </ModalHeader>
-      <ModalBody id="maxApp.champion.delete.question">
-        <Translate contentKey="maxApp.champion.delete.question" interpolate={{ id: championEntity.id }}>
+      <ModalBody id="champion.champion.delete.question">
+        <Translate contentKey="champion.champion.delete.question" interpolate={{ id: championEntity.id }}>
           Are you sure you want to delete this Champion?
         </Translate>
       </ModalBody>

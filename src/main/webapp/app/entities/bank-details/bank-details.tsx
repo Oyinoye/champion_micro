@@ -26,16 +26,16 @@ export const BankDetails = (props: IBankDetailsProps) => {
   return (
     <div>
       <h2 id="bank-details-heading" data-cy="BankDetailsHeading">
-        <Translate contentKey="maxApp.bankDetails.home.title">Bank Details</Translate>
+        <Translate contentKey="champion.bankDetails.home.title">Bank Details</Translate>
         <div className="d-flex justify-content-end">
           <Button className="mr-2" color="info" onClick={handleSyncList} disabled={loading}>
             <FontAwesomeIcon icon="sync" spin={loading} />{' '}
-            <Translate contentKey="maxApp.bankDetails.home.refreshListLabel">Refresh List</Translate>
+            <Translate contentKey="champion.bankDetails.home.refreshListLabel">Refresh List</Translate>
           </Button>
           <Link to={`${match.url}/new`} className="btn btn-primary jh-create-entity" id="jh-create-entity" data-cy="entityCreateButton">
             <FontAwesomeIcon icon="plus" />
             &nbsp;
-            <Translate contentKey="maxApp.bankDetails.home.createLabel">Create new Bank Details</Translate>
+            <Translate contentKey="champion.bankDetails.home.createLabel">Create new Bank Details</Translate>
           </Link>
         </div>
       </h2>
@@ -45,16 +45,16 @@ export const BankDetails = (props: IBankDetailsProps) => {
             <thead>
               <tr>
                 <th>
-                  <Translate contentKey="maxApp.bankDetails.id">ID</Translate>
+                  <Translate contentKey="champion.bankDetails.id">ID</Translate>
                 </th>
                 <th>
-                  <Translate contentKey="maxApp.bankDetails.bankName">Bank Name</Translate>
+                  <Translate contentKey="champion.bankDetails.bankName">Bank Name</Translate>
                 </th>
                 <th>
-                  <Translate contentKey="maxApp.bankDetails.accountNumber">Account Number</Translate>
+                  <Translate contentKey="champion.bankDetails.accountNumber">Account Number</Translate>
                 </th>
                 <th>
-                  <Translate contentKey="maxApp.bankDetails.champion">Champion</Translate>
+                  <Translate contentKey="champion.bankDetails.champion">Champion</Translate>
                 </th>
                 <th />
               </tr>
@@ -101,7 +101,7 @@ export const BankDetails = (props: IBankDetailsProps) => {
         ) : (
           !loading && (
             <div className="alert alert-warning">
-              <Translate contentKey="maxApp.bankDetails.home.notFound">No Bank Details found</Translate>
+              <Translate contentKey="champion.bankDetails.home.notFound">No Bank Details found</Translate>
             </div>
           )
         )}

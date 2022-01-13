@@ -4,7 +4,7 @@ import { waitUntilDisplayed, waitUntilHidden, isVisible } from '../../util/utils
 const expect = chai.expect;
 
 export default class ChampionUpdatePage {
-  pageTitle: ElementFinder = element(by.id('maxApp.champion.home.createOrEditLabel'));
+  pageTitle: ElementFinder = element(by.id('champion.champion.home.createOrEditLabel'));
   saveButton: ElementFinder = element(by.id('save-entity'));
   cancelButton: ElementFinder = element(by.id('cancel-save'));
   championIDInput: ElementFinder = element(by.css('input#champion-championID'));

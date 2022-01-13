@@ -6,7 +6,7 @@
     "serviceDiscoveryType": "eureka",
     "skipUserManagement": false,
     "withAdminUi": true,
-    "baseName": "maxApp",
+    "baseName": "champion",
     "buildTool": "maven",
     "databaseType": "sql",
     "devDatabaseType": "sqlite",

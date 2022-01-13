@@ -35,8 +35,8 @@ export const GuarantorDeleteDialog = (props: IGuarantorDeleteDialogProps) => {
       <ModalHeader toggle={handleClose} data-cy="guarantorDeleteDialogHeading">
         <Translate contentKey="entity.delete.title">Confirm delete operation</Translate>
       </ModalHeader>
-      <ModalBody id="maxApp.guarantor.delete.question">
-        <Translate contentKey="maxApp.guarantor.delete.question" interpolate={{ id: guarantorEntity.id }}>
+      <ModalBody id="champion.guarantor.delete.question">
+        <Translate contentKey="champion.guarantor.delete.question" interpolate={{ id: guarantorEntity.id }}>
           Are you sure you want to delete this Guarantor?
         </Translate>
       </ModalBody>

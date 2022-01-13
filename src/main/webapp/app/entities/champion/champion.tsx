@@ -73,16 +73,16 @@ export const Champion = (props: IChampionProps) => {
   return (
     <div>
       <h2 id="champion-heading" data-cy="ChampionHeading">
-        <Translate contentKey="maxApp.champion.home.title">Champions</Translate>
+        <Translate contentKey="champion.champion.home.title">Champions</Translate>
         <div className="d-flex justify-content-end">
           <Button className="mr-2" color="info" onClick={handleSyncList} disabled={loading}>
             <FontAwesomeIcon icon="sync" spin={loading} />{' '}
-            <Translate contentKey="maxApp.champion.home.refreshListLabel">Refresh List</Translate>
+            <Translate contentKey="champion.champion.home.refreshListLabel">Refresh List</Translate>
           </Button>
           <Link to={`${match.url}/new`} className="btn btn-primary jh-create-entity" id="jh-create-entity" data-cy="entityCreateButton">
             <FontAwesomeIcon icon="plus" />
             &nbsp;
-            <Translate contentKey="maxApp.champion.home.createLabel">Create new Champion</Translate>
+            <Translate contentKey="champion.champion.home.createLabel">Create new Champion</Translate>
           </Link>
         </div>
       </h2>
@@ -92,25 +92,25 @@ export const Champion = (props: IChampionProps) => {
             <thead>
               <tr>
                 <th className="hand" onClick={sort('id')}>
-                  <Translate contentKey="maxApp.champion.id">ID</Translate> <FontAwesomeIcon icon="sort" />
+                  <Translate contentKey="champion.champion.id">ID</Translate> <FontAwesomeIcon icon="sort" />
                 </th>
                 <th className="hand" onClick={sort('championID')}>
-                  <Translate contentKey="maxApp.champion.championID">Champion ID</Translate> <FontAwesomeIcon icon="sort" />
+                  <Translate contentKey="champion.champion.championID">Champion ID</Translate> <FontAwesomeIcon icon="sort" />
                 </th>
                 <th className="hand" onClick={sort('phoneNumber')}>
-                  <Translate contentKey="maxApp.champion.phoneNumber">Phone Number</Translate> <FontAwesomeIcon icon="sort" />
+                  <Translate contentKey="champion.champion.phoneNumber">Phone Number</Translate> <FontAwesomeIcon icon="sort" />
                 </th>
                 <th className="hand" onClick={sort('status')}>
-                  <Translate contentKey="maxApp.champion.status">Status</Translate> <FontAwesomeIcon icon="sort" />
+                  <Translate contentKey="champion.champion.status">Status</Translate> <FontAwesomeIcon icon="sort" />
                 </th>
                 <th className="hand" onClick={sort('bvn')}>
-                  <Translate contentKey="maxApp.champion.bvn">Bvn</Translate> <FontAwesomeIcon icon="sort" />
+                  <Translate contentKey="champion.champion.bvn">Bvn</Translate> <FontAwesomeIcon icon="sort" />
                 </th>
                 <th className="hand" onClick={sort('dateOfBirth')}>
-                  <Translate contentKey="maxApp.champion.dateOfBirth">Date Of Birth</Translate> <FontAwesomeIcon icon="sort" />
+                  <Translate contentKey="champion.champion.dateOfBirth">Date Of Birth</Translate> <FontAwesomeIcon icon="sort" />
                 </th>
                 <th>
-                  <Translate contentKey="maxApp.champion.platform">Platform</Translate> <FontAwesomeIcon icon="sort" />
+                  <Translate contentKey="champion.champion.platform">Platform</Translate> <FontAwesomeIcon icon="sort" />
                 </th>
                 <th />
               </tr>
@@ -126,7 +126,7 @@ export const Champion = (props: IChampionProps) => {
                   <td>{champion.championID}</td>
                   <td>{champion.phoneNumber}</td>
                   <td>
-                    <Translate contentKey={`maxApp.MaxEvent.${champion.status}`} />
+                    <Translate contentKey={`champion.MaxEvent.${champion.status}`} />
                   </td>
                   <td>{champion.bvn}</td>
                   <td>
@@ -174,7 +174,7 @@ export const Champion = (props: IChampionProps) => {
         ) : (
           !loading && (
             <div className="alert alert-warning">
-              <Translate contentKey="maxApp.champion.home.notFound">No Champions found</Translate>
+              <Translate contentKey="champion.champion.home.notFound">No Champions found</Translate>
             </div>
           )
         )}

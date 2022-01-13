@@ -35,8 +35,8 @@ export const DriverLicenseDeleteDialog = (props: IDriverLicenseDeleteDialogProps
       <ModalHeader toggle={handleClose} data-cy="driverLicenseDeleteDialogHeading">
         <Translate contentKey="entity.delete.title">Confirm delete operation</Translate>
       </ModalHeader>
-      <ModalBody id="maxApp.driverLicense.delete.question">
-        <Translate contentKey="maxApp.driverLicense.delete.question" interpolate={{ id: driverLicenseEntity.id }}>
+      <ModalBody id="champion.driverLicense.delete.question">
+        <Translate contentKey="champion.driverLicense.delete.question" interpolate={{ id: driverLicenseEntity.id }}>
           Are you sure you want to delete this DriverLicense?
         </Translate>
       </ModalBody>

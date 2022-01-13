@@ -9,7 +9,7 @@ import DriverLicenseUpdatePage from './driver-license-update.page-object';
 const expect = chai.expect;
 export class DriverLicenseDeleteDialog {
   deleteModal = element(by.className('modal'));
-  private dialogTitle: ElementFinder = element(by.id('maxApp.driverLicense.delete.question'));
+  private dialogTitle: ElementFinder = element(by.id('champion.driverLicense.delete.question'));
   private confirmButton = element(by.id('jhi-confirm-delete-driverLicense'));
 
   getDialogTitle() {
@@ -59,7 +59,7 @@ export default class DriverLicenseComponentsPage {
 
     const driverLicenseDeleteDialog = new DriverLicenseDeleteDialog();
     await waitUntilDisplayed(driverLicenseDeleteDialog.deleteModal);
-    expect(await driverLicenseDeleteDialog.getDialogTitle().getAttribute('id')).to.match(/maxApp.driverLicense.delete.question/);
+    expect(await driverLicenseDeleteDialog.getDialogTitle().getAttribute('id')).to.match(/champion.driverLicense.delete.question/);
     await driverLicenseDeleteDialog.clickOnConfirmButton();
 
     await waitUntilHidden(driverLicenseDeleteDialog.deleteModal);

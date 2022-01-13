@@ -21,7 +21,7 @@ export const PlatformDetail = (props: IPlatformDetailProps) => {
     <Row>
       <Col md="8">
         <h2 data-cy="platformDetailsHeading">
-          <Translate contentKey="maxApp.platform.detail.title">Platform</Translate>
+          <Translate contentKey="champion.platform.detail.title">Platform</Translate>
         </h2>
         <dl className="jh-entity-details">
           <dt>
@@ -32,13 +32,13 @@ export const PlatformDetail = (props: IPlatformDetailProps) => {
           <dd>{platformEntity.id}</dd>
           <dt>
             <span id="code">
-              <Translate contentKey="maxApp.platform.code">Code</Translate>
+              <Translate contentKey="champion.platform.code">Code</Translate>
             </span>
           </dt>
           <dd>{platformEntity.code}</dd>
           <dt>
             <span id="description">
-              <Translate contentKey="maxApp.platform.description">Description</Translate>
+              <Translate contentKey="champion.platform.description">Description</Translate>
             </span>
           </dt>
           <dd>{platformEntity.description}</dd>

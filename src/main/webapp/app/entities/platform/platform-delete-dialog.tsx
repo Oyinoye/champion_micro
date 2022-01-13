@@ -35,8 +35,8 @@ export const PlatformDeleteDialog = (props: IPlatformDeleteDialogProps) => {
       <ModalHeader toggle={handleClose} data-cy="platformDeleteDialogHeading">
         <Translate contentKey="entity.delete.title">Confirm delete operation</Translate>
       </ModalHeader>
-      <ModalBody id="maxApp.platform.delete.question">
-        <Translate contentKey="maxApp.platform.delete.question" interpolate={{ id: platformEntity.id }}>
+      <ModalBody id="champion.platform.delete.question">
+        <Translate contentKey="champion.platform.delete.question" interpolate={{ id: platformEntity.id }}>
           Are you sure you want to delete this Platform?
         </Translate>
       </ModalBody>

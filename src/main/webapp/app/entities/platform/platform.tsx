@@ -26,16 +26,16 @@ export const Platform = (props: IPlatformProps) => {
   return (
     <div>
       <h2 id="platform-heading" data-cy="PlatformHeading">
-        <Translate contentKey="maxApp.platform.home.title">Platforms</Translate>
+        <Translate contentKey="champion.platform.home.title">Platforms</Translate>
         <div className="d-flex justify-content-end">
           <Button className="mr-2" color="info" onClick={handleSyncList} disabled={loading}>
             <FontAwesomeIcon icon="sync" spin={loading} />{' '}
-            <Translate contentKey="maxApp.platform.home.refreshListLabel">Refresh List</Translate>
+            <Translate contentKey="champion.platform.home.refreshListLabel">Refresh List</Translate>
           </Button>
           <Link to={`${match.url}/new`} className="btn btn-primary jh-create-entity" id="jh-create-entity" data-cy="entityCreateButton">
             <FontAwesomeIcon icon="plus" />
             &nbsp;
-            <Translate contentKey="maxApp.platform.home.createLabel">Create new Platform</Translate>
+            <Translate contentKey="champion.platform.home.createLabel">Create new Platform</Translate>
           </Link>
         </div>
       </h2>
@@ -45,13 +45,13 @@ export const Platform = (props: IPlatformProps) => {
             <thead>
               <tr>
                 <th>
-                  <Translate contentKey="maxApp.platform.id">ID</Translate>
+                  <Translate contentKey="champion.platform.id">ID</Translate>
                 </th>
                 <th>
-                  <Translate contentKey="maxApp.platform.code">Code</Translate>
+                  <Translate contentKey="champion.platform.code">Code</Translate>
                 </th>
                 <th>
-                  <Translate contentKey="maxApp.platform.description">Description</Translate>
+                  <Translate contentKey="champion.platform.description">Description</Translate>
                 </th>
                 <th />
               </tr>
@@ -95,7 +95,7 @@ export const Platform = (props: IPlatformProps) => {
         ) : (
           !loading && (
             <div className="alert alert-warning">
-              <Translate contentKey="maxApp.platform.home.notFound">No Platforms found</Translate>
+              <Translate contentKey="champion.platform.home.notFound">No Platforms found</Translate>
             </div>
           )
         )}

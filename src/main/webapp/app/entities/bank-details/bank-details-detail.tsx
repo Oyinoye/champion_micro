@@ -21,7 +21,7 @@ export const BankDetailsDetail = (props: IBankDetailsDetailProps) => {
     <Row>
       <Col md="8">
         <h2 data-cy="bankDetailsDetailsHeading">
-          <Translate contentKey="maxApp.bankDetails.detail.title">BankDetails</Translate>
+          <Translate contentKey="champion.bankDetails.detail.title">BankDetails</Translate>
         </h2>
         <dl className="jh-entity-details">
           <dt>
@@ -32,18 +32,18 @@ export const BankDetailsDetail = (props: IBankDetailsDetailProps) => {
           <dd>{bankDetailsEntity.id}</dd>
           <dt>
             <span id="bankName">
-              <Translate contentKey="maxApp.bankDetails.bankName">Bank Name</Translate>
+              <Translate contentKey="champion.bankDetails.bankName">Bank Name</Translate>
             </span>
           </dt>
           <dd>{bankDetailsEntity.bankName}</dd>
           <dt>
             <span id="accountNumber">
-              <Translate contentKey="maxApp.bankDetails.accountNumber">Account Number</Translate>
+              <Translate contentKey="champion.bankDetails.accountNumber">Account Number</Translate>
             </span>
           </dt>
           <dd>{bankDetailsEntity.accountNumber}</dd>
           <dt>
-            <Translate contentKey="maxApp.bankDetails.champion">Champion</Translate>
+            <Translate contentKey="champion.bankDetails.champion">Champion</Translate>
           </dt>
           <dd>{bankDetailsEntity.champion ? bankDetailsEntity.champion.championID : ''}</dd>
         </dl>

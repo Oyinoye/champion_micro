@@ -21,7 +21,7 @@ export const DriverLicenseDetail = (props: IDriverLicenseDetailProps) => {
     <Row>
       <Col md="8">
         <h2 data-cy="driverLicenseDetailsHeading">
-          <Translate contentKey="maxApp.driverLicense.detail.title">DriverLicense</Translate>
+          <Translate contentKey="champion.driverLicense.detail.title">DriverLicense</Translate>
         </h2>
         <dl className="jh-entity-details">
           <dt>
@@ -32,13 +32,13 @@ export const DriverLicenseDetail = (props: IDriverLicenseDetailProps) => {
           <dd>{driverLicenseEntity.id}</dd>
           <dt>
             <span id="licenseNumber">
-              <Translate contentKey="maxApp.driverLicense.licenseNumber">License Number</Translate>
+              <Translate contentKey="champion.driverLicense.licenseNumber">License Number</Translate>
             </span>
           </dt>
           <dd>{driverLicenseEntity.licenseNumber}</dd>
           <dt>
             <span id="issueDate">
-              <Translate contentKey="maxApp.driverLicense.issueDate">Issue Date</Translate>
+              <Translate contentKey="champion.driverLicense.issueDate">Issue Date</Translate>
             </span>
           </dt>
           <dd>
@@ -48,7 +48,7 @@ export const DriverLicenseDetail = (props: IDriverLicenseDetailProps) => {
           </dd>
           <dt>
             <span id="expiryDate">
-              <Translate contentKey="maxApp.driverLicense.expiryDate">Expiry Date</Translate>
+              <Translate contentKey="champion.driverLicense.expiryDate">Expiry Date</Translate>
             </span>
           </dt>
           <dd>
@@ -58,18 +58,18 @@ export const DriverLicenseDetail = (props: IDriverLicenseDetailProps) => {
           </dd>
           <dt>
             <span id="address">
-              <Translate contentKey="maxApp.driverLicense.address">Address</Translate>
+              <Translate contentKey="champion.driverLicense.address">Address</Translate>
             </span>
           </dt>
           <dd>{driverLicenseEntity.address}</dd>
           <dt>
             <span id="comment">
-              <Translate contentKey="maxApp.driverLicense.comment">Comment</Translate>
+              <Translate contentKey="champion.driverLicense.comment">Comment</Translate>
             </span>
           </dt>
           <dd>{driverLicenseEntity.comment}</dd>
           <dt>
-            <Translate contentKey="maxApp.driverLicense.champion">Champion</Translate>
+            <Translate contentKey="champion.driverLicense.champion">Champion</Translate>
           </dt>
           <dd>{driverLicenseEntity.champion ? driverLicenseEntity.champion.championID : ''}</dd>
         </dl>

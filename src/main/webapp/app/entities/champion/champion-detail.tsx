@@ -21,7 +21,7 @@ export const ChampionDetail = (props: IChampionDetailProps) => {
     <Row>
       <Col md="8">
         <h2 data-cy="championDetailsHeading">
-          <Translate contentKey="maxApp.champion.detail.title">Champion</Translate>
+          <Translate contentKey="champion.champion.detail.title">Champion</Translate>
         </h2>
         <dl className="jh-entity-details">
           <dt>
@@ -32,31 +32,31 @@ export const ChampionDetail = (props: IChampionDetailProps) => {
           <dd>{championEntity.id}</dd>
           <dt>
             <span id="championID">
-              <Translate contentKey="maxApp.champion.championID">Champion ID</Translate>
+              <Translate contentKey="champion.champion.championID">Champion ID</Translate>
             </span>
           </dt>
           <dd>{championEntity.championID}</dd>
           <dt>
             <span id="phoneNumber">
-              <Translate contentKey="maxApp.champion.phoneNumber">Phone Number</Translate>
+              <Translate contentKey="champion.champion.phoneNumber">Phone Number</Translate>
             </span>
           </dt>
           <dd>{championEntity.phoneNumber}</dd>
           <dt>
             <span id="status">
-              <Translate contentKey="maxApp.champion.status">Status</Translate>
+              <Translate contentKey="champion.champion.status">Status</Translate>
             </span>
           </dt>
           <dd>{championEntity.status}</dd>
           <dt>
             <span id="bvn">
-              <Translate contentKey="maxApp.champion.bvn">Bvn</Translate>
+              <Translate contentKey="champion.champion.bvn">Bvn</Translate>
             </span>
           </dt>
           <dd>{championEntity.bvn}</dd>
           <dt>
             <span id="dateOfBirth">
-              <Translate contentKey="maxApp.champion.dateOfBirth">Date Of Birth</Translate>
+              <Translate contentKey="champion.champion.dateOfBirth">Date Of Birth</Translate>
             </span>
           </dt>
           <dd>
@@ -65,7 +65,7 @@ export const ChampionDetail = (props: IChampionDetailProps) => {
             ) : null}
           </dd>
           <dt>
-            <Translate contentKey="maxApp.champion.platform">Platform</Translate>
+            <Translate contentKey="champion.champion.platform">Platform</Translate>
           </dt>
           <dd>{championEntity.platform ? championEntity.platform.code : ''}</dd>
         </dl>

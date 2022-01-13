@@ -4,7 +4,7 @@ import { waitUntilDisplayed, waitUntilHidden, isVisible } from '../../util/utils
 const expect = chai.expect;
 
 export default class DriverLicenseUpdatePage {
-  pageTitle: ElementFinder = element(by.id('maxApp.driverLicense.home.createOrEditLabel'));
+  pageTitle: ElementFinder = element(by.id('champion.driverLicense.home.createOrEditLabel'));
   saveButton: ElementFinder = element(by.id('save-entity'));
   cancelButton: ElementFinder = element(by.id('cancel-save'));
   licenseNumberInput: ElementFinder = element(by.css('input#driver-license-licenseNumber'));

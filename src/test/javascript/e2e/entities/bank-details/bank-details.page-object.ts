@@ -9,7 +9,7 @@ import BankDetailsUpdatePage from './bank-details-update.page-object';
 const expect = chai.expect;
 export class BankDetailsDeleteDialog {
   deleteModal = element(by.className('modal'));
-  private dialogTitle: ElementFinder = element(by.id('maxApp.bankDetails.delete.question'));
+  private dialogTitle: ElementFinder = element(by.id('champion.bankDetails.delete.question'));
   private confirmButton = element(by.id('jhi-confirm-delete-bankDetails'));
 
   getDialogTitle() {
@@ -59,7 +59,7 @@ export default class BankDetailsComponentsPage {
 
     const bankDetailsDeleteDialog = new BankDetailsDeleteDialog();
     await waitUntilDisplayed(bankDetailsDeleteDialog.deleteModal);
-    expect(await bankDetailsDeleteDialog.getDialogTitle().getAttribute('id')).to.match(/maxApp.bankDetails.delete.question/);
+    expect(await bankDetailsDeleteDialog.getDialogTitle().getAttribute('id')).to.match(/champion.bankDetails.delete.question/);
     await bankDetailsDeleteDialog.clickOnConfirmButton();
 
     await waitUntilHidden(bankDetailsDeleteDialog.deleteModal);

@@ -21,7 +21,7 @@ export const GuarantorDetail = (props: IGuarantorDetailProps) => {
     <Row>
       <Col md="8">
         <h2 data-cy="guarantorDetailsHeading">
-          <Translate contentKey="maxApp.guarantor.detail.title">Guarantor</Translate>
+          <Translate contentKey="champion.guarantor.detail.title">Guarantor</Translate>
         </h2>
         <dl className="jh-entity-details">
           <dt>
@@ -32,19 +32,19 @@ export const GuarantorDetail = (props: IGuarantorDetailProps) => {
           <dd>{guarantorEntity.id}</dd>
           <dt>
             <span id="firstName">
-              <Translate contentKey="maxApp.guarantor.firstName">First Name</Translate>
+              <Translate contentKey="champion.guarantor.firstName">First Name</Translate>
             </span>
           </dt>
           <dd>{guarantorEntity.firstName}</dd>
           <dt>
             <span id="lastName">
-              <Translate contentKey="maxApp.guarantor.lastName">Last Name</Translate>
+              <Translate contentKey="champion.guarantor.lastName">Last Name</Translate>
             </span>
           </dt>
           <dd>{guarantorEntity.lastName}</dd>
           <dt>
             <span id="dateOfBirth">
-              <Translate contentKey="maxApp.guarantor.dateOfBirth">Date Of Birth</Translate>
+              <Translate contentKey="champion.guarantor.dateOfBirth">Date Of Birth</Translate>
             </span>
           </dt>
           <dd>
@@ -54,37 +54,37 @@ export const GuarantorDetail = (props: IGuarantorDetailProps) => {
           </dd>
           <dt>
             <span id="relationship">
-              <Translate contentKey="maxApp.guarantor.relationship">Relationship</Translate>
+              <Translate contentKey="champion.guarantor.relationship">Relationship</Translate>
             </span>
           </dt>
           <dd>{guarantorEntity.relationship}</dd>
           <dt>
             <span id="knowHowLong">
-              <Translate contentKey="maxApp.guarantor.knowHowLong">Know How Long</Translate>
+              <Translate contentKey="champion.guarantor.knowHowLong">Know How Long</Translate>
             </span>
           </dt>
           <dd>{guarantorEntity.knowHowLong}</dd>
           <dt>
             <span id="occupation">
-              <Translate contentKey="maxApp.guarantor.occupation">Occupation</Translate>
+              <Translate contentKey="champion.guarantor.occupation">Occupation</Translate>
             </span>
           </dt>
           <dd>{guarantorEntity.occupation}</dd>
           <dt>
             <span id="homeAddress">
-              <Translate contentKey="maxApp.guarantor.homeAddress">Home Address</Translate>
+              <Translate contentKey="champion.guarantor.homeAddress">Home Address</Translate>
             </span>
           </dt>
           <dd>{guarantorEntity.homeAddress}</dd>
           <dt>
             <span id="officeAddress">
-              <Translate contentKey="maxApp.guarantor.officeAddress">Office Address</Translate>
+              <Translate contentKey="champion.guarantor.officeAddress">Office Address</Translate>
             </span>
           </dt>
           <dd>{guarantorEntity.officeAddress}</dd>
           <dt>
             <span id="utilityUpload">
-              <Translate contentKey="maxApp.guarantor.utilityUpload">Utility Upload</Translate>
+              <Translate contentKey="champion.guarantor.utilityUpload">Utility Upload</Translate>
             </span>
           </dt>
           <dd>
@@ -106,7 +106,7 @@ export const GuarantorDetail = (props: IGuarantorDetailProps) => {
           </dd>
           <dt>
             <span id="idUpload">
-              <Translate contentKey="maxApp.guarantor.idUpload">Id Upload</Translate>
+              <Translate contentKey="champion.guarantor.idUpload">Id Upload</Translate>
             </span>
           </dt>
           <dd>
@@ -127,7 +127,7 @@ export const GuarantorDetail = (props: IGuarantorDetailProps) => {
             ) : null}
           </dd>
           <dt>
-            <Translate contentKey="maxApp.guarantor.champion">Champion</Translate>
+            <Translate contentKey="champion.guarantor.champion">Champion</Translate>
           </dt>
           <dd>{guarantorEntity.champion ? guarantorEntity.champion.championID : ''}</dd>
         </dl>

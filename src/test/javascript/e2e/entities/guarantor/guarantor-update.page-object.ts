@@ -8,7 +8,7 @@ const expect = chai.expect;
 const fileToUpload = '../../../../../../src/main/webapp/content/images/logo-jhipster.png';
 const absolutePath = path.resolve(__dirname, fileToUpload);
 export default class GuarantorUpdatePage {
-  pageTitle: ElementFinder = element(by.id('maxApp.guarantor.home.createOrEditLabel'));
+  pageTitle: ElementFinder = element(by.id('champion.guarantor.home.createOrEditLabel'));
   saveButton: ElementFinder = element(by.id('save-entity'));
   cancelButton: ElementFinder = element(by.id('cancel-save'));
   firstNameInput: ElementFinder = element(by.css('input#guarantor-firstName'));

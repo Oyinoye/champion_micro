@@ -20,7 +20,7 @@
   "fluentMethods": true,
   "readOnly": false,
   "embedded": false,
-  "applications": ["maxApp"],
+  "applications": ["champion"],
   "databaseType": "sql",
   "changelogDate": "20220113155957"
 }

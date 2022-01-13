@@ -61,8 +61,8 @@ export const ChampionUpdate = (props: IChampionUpdateProps) => {
     <div>
       <Row className="justify-content-center">
         <Col md="8">
-          <h2 id="maxApp.champion.home.createOrEditLabel" data-cy="ChampionCreateUpdateHeading">
-            <Translate contentKey="maxApp.champion.home.createOrEditLabel">Create or edit a Champion</Translate>
+          <h2 id="champion.champion.home.createOrEditLabel" data-cy="ChampionCreateUpdateHeading">
+            <Translate contentKey="champion.champion.home.createOrEditLabel">Create or edit a Champion</Translate>
           </h2>
         </Col>
       </Row>
@@ -82,7 +82,7 @@ export const ChampionUpdate = (props: IChampionUpdateProps) => {
               ) : null}
               <AvGroup>
                 <Label id="championIDLabel" for="champion-championID">
-                  <Translate contentKey="maxApp.champion.championID">Champion ID</Translate>
+                  <Translate contentKey="champion.champion.championID">Champion ID</Translate>
                 </Label>
                 <AvField
                   id="champion-championID"
@@ -96,7 +96,7 @@ export const ChampionUpdate = (props: IChampionUpdateProps) => {
               </AvGroup>
               <AvGroup>
                 <Label id="phoneNumberLabel" for="champion-phoneNumber">
-                  <Translate contentKey="maxApp.champion.phoneNumber">Phone Number</Translate>
+                  <Translate contentKey="champion.champion.phoneNumber">Phone Number</Translate>
                 </Label>
                 <AvField
                   id="champion-phoneNumber"
@@ -110,7 +110,7 @@ export const ChampionUpdate = (props: IChampionUpdateProps) => {
               </AvGroup>
               <AvGroup>
                 <Label id="statusLabel" for="champion-status">
-                  <Translate contentKey="maxApp.champion.status">Status</Translate>
+                  <Translate contentKey="champion.champion.status">Status</Translate>
                 </Label>
                 <AvInput
                   id="champion-status"
@@ -120,29 +120,29 @@ export const ChampionUpdate = (props: IChampionUpdateProps) => {
                   name="status"
                   value={(!isNew && championEntity.status) || 'ProspectSecured'}
                 >
-                  <option value="ProspectSecured">{translate('maxApp.MaxEvent.ProspectSecured')}</option>
-                  <option value="TestScheduled">{translate('maxApp.MaxEvent.TestScheduled')}</option>
-                  <option value="TestPassed">{translate('maxApp.MaxEvent.TestPassed')}</option>
-                  <option value="TestFailed">{translate('maxApp.MaxEvent.TestFailed')}</option>
-                  <option value="CreditRated">{translate('maxApp.MaxEvent.CreditRated')}</option>
-                  <option value="GuarantorReturned">{translate('maxApp.MaxEvent.GuarantorReturned')}</option>
-                  <option value="Activated">{translate('maxApp.MaxEvent.Activated')}</option>
-                  <option value="VehicleAssigned">{translate('maxApp.MaxEvent.VehicleAssigned')}</option>
-                  <option value="ContractEntered">{translate('maxApp.MaxEvent.ContractEntered')}</option>
-                  <option value="Churned">{translate('maxApp.MaxEvent.Churned')}</option>
-                  <option value="Deactivated">{translate('maxApp.MaxEvent.Deactivated')}</option>
-                  <option value="HPExited">{translate('maxApp.MaxEvent.HPExited')}</option>
+                  <option value="ProspectSecured">{translate('champion.MaxEvent.ProspectSecured')}</option>
+                  <option value="TestScheduled">{translate('champion.MaxEvent.TestScheduled')}</option>
+                  <option value="TestPassed">{translate('champion.MaxEvent.TestPassed')}</option>
+                  <option value="TestFailed">{translate('champion.MaxEvent.TestFailed')}</option>
+                  <option value="CreditRated">{translate('champion.MaxEvent.CreditRated')}</option>
+                  <option value="GuarantorReturned">{translate('champion.MaxEvent.GuarantorReturned')}</option>
+                  <option value="Activated">{translate('champion.MaxEvent.Activated')}</option>
+                  <option value="VehicleAssigned">{translate('champion.MaxEvent.VehicleAssigned')}</option>
+                  <option value="ContractEntered">{translate('champion.MaxEvent.ContractEntered')}</option>
+                  <option value="Churned">{translate('champion.MaxEvent.Churned')}</option>
+                  <option value="Deactivated">{translate('champion.MaxEvent.Deactivated')}</option>
+                  <option value="HPExited">{translate('champion.MaxEvent.HPExited')}</option>
                 </AvInput>
               </AvGroup>
               <AvGroup>
                 <Label id="bvnLabel" for="champion-bvn">
-                  <Translate contentKey="maxApp.champion.bvn">Bvn</Translate>
+                  <Translate contentKey="champion.champion.bvn">Bvn</Translate>
                 </Label>
                 <AvField id="champion-bvn" data-cy="bvn" type="string" className="form-control" name="bvn" />
               </AvGroup>
               <AvGroup>
                 <Label id="dateOfBirthLabel" for="champion-dateOfBirth">
-                  <Translate contentKey="maxApp.champion.dateOfBirth">Date Of Birth</Translate>
+                  <Translate contentKey="champion.champion.dateOfBirth">Date Of Birth</Translate>
                 </Label>
                 <AvField
                   id="champion-dateOfBirth"
@@ -157,7 +157,7 @@ export const ChampionUpdate = (props: IChampionUpdateProps) => {
               </AvGroup>
               <AvGroup>
                 <Label for="champion-platform">
-                  <Translate contentKey="maxApp.champion.platform">Platform</Translate>
+                  <Translate contentKey="champion.champion.platform">Platform</Translate>
                 </Label>
                 <AvInput id="champion-platform" data-cy="platform" type="select" className="form-control" name="platformId">
                   <option value="" key="0" />

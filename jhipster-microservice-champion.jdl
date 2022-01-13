@@ -5,7 +5,7 @@
 application {
   config {
     packageName ng.com.max
-    baseName maxApp
+    baseName champion
     applicationType gateway
     authenticationType jwt
     clientFramework react
