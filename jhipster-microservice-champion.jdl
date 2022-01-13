@@ -1,0 +1,117 @@
+/**
+ * JHipster JDL model for myGateway
+ */
+
+application {
+  config {
+    packageName ng.com.max
+    baseName maxApp
+    applicationType gateway
+    authenticationType jwt
+    clientFramework react
+    databaseType sql
+    serverPort 8084
+    devDatabaseType postgresql
+    dtoSuffix DTO
+    enableSwaggerCodegen true
+    entitySuffix Entity
+    languages [en, fr]
+    messageBroker kafka
+    nativeLanguage en
+    prodDatabaseType postgresql
+    serviceDiscoveryType eureka
+    testFrameworks [protractor, cucumber, gatling]
+
+  }
+  entities *
+}
+
+// ==============================
+// Entity definitions starts here
+// ==============================
+
+/** Events  **/
+enum MaxEvent {
+    ProspectSecured
+    TestScheduled
+    TestPassed
+    TestFailed
+    CreditRated
+    GuarantorReturned
+    Activated
+    VehicleAssigned
+    ContractEntered
+    Churned
+    Deactivated
+    HPExited
+}
+
+/** Champion  **/
+entity Champion {
+    championID String required
+    phoneNumber String required
+    status MaxEvent
+    bvn Integer
+    dateOfBirth LocalDate required
+}
+
+/** Driver License **/
+entity DriverLicense {
+    licenseNumber String
+    issueDate LocalDate
+    expiryDate LocalDate
+    address String
+    comment String
+}
+
+/** Bank Details **/
+entity BankDetails {
+    bankName String
+    accountNumber String
+}
+
+/** This defines different Platforms **/
+entity Platform {
+    code String
+    description String
+}
+
+/** Guarantor  **/
+entity Guarantor {
+    firstName String
+    lastName String
+    dateOfBirth LocalDate
+    relationship String
+    knowHowLong String
+    occupation  String
+    homeAddress String
+    officeAddress String
+    utilityUpload ImageBlob
+    idUpload ImageBlob
+}
+
+
+relationship ManyToOne {
+    BankDetails{champion(championID)} to Champion
+    Champion{platform(code)} to Platform
+}
+
+
+relationship OneToOne {
+    Guarantor{champion(championID) required} to Champion
+    DriverLicense{champion(championID) required} to Champion
+}
+
+
+
+
+// =======
+// Options
+// =======
+// Set pagination options
+paginate Champion with pagination
+dto * with mapstruct
+// Set service options to all
+service all with serviceImpl
+// Set an angular suffix
+// angularSuffix * with mySuffix

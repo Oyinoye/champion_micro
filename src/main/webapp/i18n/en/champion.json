@@ -1,0 +1,29 @@
+{
+  "maxApp": {
+    "champion": {
+      "home": {
+        "title": "Champions",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Champion",
+        "createOrEditLabel": "Create or edit a Champion",
+        "notFound": "No Champions found"
+      },
+      "created": "A new Champion is created with identifier {{ param }}",
+      "updated": "A Champion is updated with identifier {{ param }}",
+      "deleted": "A Champion is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Champion {{ id }}?"
+      },
+      "detail": {
+        "title": "Champion"
+      },
+      "id": "ID",
+      "championID": "Champion ID",
+      "phoneNumber": "Phone Number",
+      "status": "Status",
+      "bvn": "Bvn",
+      "dateOfBirth": "Date Of Birth",
+      "platform": "Platform"
+    }
+  }
+}

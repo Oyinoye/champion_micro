@@ -1,0 +1,29 @@
+{
+  "maxApp": {
+    "driverLicense": {
+      "home": {
+        "title": "DriverLicenses",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Driver License",
+        "createOrEditLabel": "Créer ou éditer un Driver License",
+        "notFound": "Aucun Driver License trouvé"
+      },
+      "created": "Un nouveau Driver License a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Driver License avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Driver License avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Driver License {{ id }} ?"
+      },
+      "detail": {
+        "title": "Driver License"
+      },
+      "id": "ID",
+      "licenseNumber": "License Number",
+      "issueDate": "Issue Date",
+      "expiryDate": "Expiry Date",
+      "address": "Address",
+      "comment": "Comment",
+      "champion": "Champion"
+    }
+  }
+}

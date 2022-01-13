@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  maxapp-app:
+    build: ../../..
+    container_name: maxapp-app
+    environment:
+      env_file: .env
+    ports:
+      - 8084:8084

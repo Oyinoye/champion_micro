@@ -1,0 +1,57 @@
+{
+  "generator-jhipster": {
+    "authenticationType": "jwt",
+    "clientFramework": "react",
+    "serverPort": "8084",
+    "serviceDiscoveryType": "eureka",
+    "skipUserManagement": false,
+    "withAdminUi": true,
+    "baseName": "maxApp",
+    "buildTool": "maven",
+    "databaseType": "sql",
+    "devDatabaseType": "sqlite",
+    "cacheProvider": "no",
+    "enableHibernateCache": false,
+    "enableSwaggerCodegen": true,
+    "enableTranslation": true,
+    "jhiPrefix": "jhi",
+    "languages": ["en", "fr"],
+    "messageBroker": "kafka",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "skipClient": false,
+    "testFrameworks": ["protractor", "cucumber", "gatling"],
+    "websocket": false,
+    "packageName": "com.jhipster.node",
+    "packageFolder": "ng/com/max",
+    "applicationType": "gateway",
+    "dtoSuffix": "DTO",
+    "entitySuffix": "Entity",
+    "nativeLanguage": "en",
+    "jhipsterVersion": "7.0.1",
+    "skipServer": false,
+    "clientPackageManager": "npm",
+    "reactive": true,
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "entities": ["Champion", "DriverLicense", "BankDetails", "Platform", "Guarantor"],
+    "skipCheckLengthOfIdentifier": false,
+    "skipFakeData": false,
+    "blueprints": [
+      {
+        "name": "generator-jhipster-nodejs",
+        "version": "2.0.0"
+      }
+    ],
+    "otherModules": [
+      {
+        "name": "generator-jhipster-nodejs",
+        "version": "2.0.0"
+      }
+    ],
+    "pages": [],
+    "creationTimestamp": 1642089357892,
+    "jwtSecretKey": "YjhmMTQyNzE1ZTMwNTQ1MDkxYTcyYWU0MGI0ZDNjMmJmYjdlNzJlMjg5NTMzYmRkMGYzODk4YmJjMjVhODE1YTkxYWM4M2U4M2NjOWQ3ZGIwMTRlMTJhZjI3NDk5ZTgzYTU1NzAxMmQyZDkxZjY1ZWRmZjA3ZWEzNzliYTc0MGU=",
+    "lastLiquibaseTimestamp": 1642089657000
+  }
+}
