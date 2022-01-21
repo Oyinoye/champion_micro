@@ -2,6 +2,7 @@ import { config } from '../config';
 import { Response } from 'express';
 import { Page } from '../domain/base/pagination.entity';
 
+
 const applicationName = config.get('jhipster.clientApp.name');
 const enableTranslation = true;
 
@@ -53,7 +54,7 @@ export class HeaderUtil {
     }
 
     private static prepareLink(url, pageNumber, pageSize, relType): any {
-        url = new URL('http://localhost' + url);
+        url = new url('http://localhost' + url);
         url.searchParams.set('page', pageNumber);
         url.searchParams.set('size', pageSize);
         url = url.toString().replace('http://localhost', '');
