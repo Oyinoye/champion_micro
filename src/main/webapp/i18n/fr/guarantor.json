@@ -1,0 +1,34 @@
+{
+  "championApp": {
+    "guarantor": {
+      "home": {
+        "title": "Guarantors",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Guarantor",
+        "createOrEditLabel": "Créer ou éditer un Guarantor",
+        "notFound": "Aucun Guarantor trouvé"
+      },
+      "created": "Un nouveau Guarantor a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Guarantor avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Guarantor avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Guarantor {{ id }} ?"
+      },
+      "detail": {
+        "title": "Guarantor"
+      },
+      "id": "ID",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "dateOfBirth": "Date Of Birth",
+      "relationship": "Relationship",
+      "knowHowLong": "Know How Long",
+      "occupation": "Occupation",
+      "homeAddress": "Home Address",
+      "officeAddress": "Office Address",
+      "utilityUpload": "Utility Upload",
+      "idUpload": "Id Upload",
+      "champion": "Champion"
+    }
+  }
+}

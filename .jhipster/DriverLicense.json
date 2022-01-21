@@ -1,0 +1,47 @@
+{
+  "name": "DriverLicense",
+  "fields": [
+    {
+      "fieldName": "licenseNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "issueDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "expiryDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "address",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "comment",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "champion",
+      "otherEntityRelationshipName": "driverLicense",
+      "relationshipName": "champion",
+      "otherEntityField": "championID",
+      "ownerSide": true
+    }
+  ],
+  "javadoc": "Driver License",
+  "entityTableName": "driver_license",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["champion"],
+  "databaseType": "sql",
+  "changelogDate": "20220121032204"
+}

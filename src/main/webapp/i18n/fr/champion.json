@@ -1,0 +1,30 @@
+{
+  "championApp": {
+    "champion": {
+      "home": {
+        "title": "Champions",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Champion",
+        "createOrEditLabel": "Créer ou éditer un Champion",
+        "notFound": "Aucun Champion trouvé"
+      },
+      "created": "Un nouveau Champion a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Champion avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Champion avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Champion {{ id }} ?"
+      },
+      "detail": {
+        "title": "Champion"
+      },
+      "id": "ID",
+      "championID": "Champion ID",
+      "phoneNumber": "Phone Number",
+      "status": "Status",
+      "bvn": "Bvn",
+      "dateOfBirth": "Date Of Birth",
+      "user": "User",
+      "platform": "Platform"
+    }
+  }
+}

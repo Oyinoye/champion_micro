@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  champion-app:
+    build: ../../..
+    container_name: champion-app
+    environment:
+    ports:
+      - 8084:8084

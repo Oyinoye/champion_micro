@@ -1,0 +1,69 @@
+{
+  "name": "Guarantor",
+  "fields": [
+    {
+      "fieldName": "firstName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lastName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateOfBirth",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "relationship",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "knowHowLong",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "occupation",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "homeAddress",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "officeAddress",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "utilityUpload",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "image"
+    },
+    {
+      "fieldName": "idUpload",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "image"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "champion",
+      "otherEntityRelationshipName": "guarantor",
+      "relationshipName": "champion",
+      "otherEntityField": "championID",
+      "ownerSide": true
+    }
+  ],
+  "javadoc": "Guarantor",
+  "entityTableName": "guarantor",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["champion"],
+  "databaseType": "sql",
+  "changelogDate": "20220121032504"
+}

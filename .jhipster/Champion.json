@@ -1,0 +1,57 @@
+{
+  "name": "Champion",
+  "fields": [
+    {
+      "fieldName": "championID",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "phoneNumber",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "MaxEvent",
+      "fieldValues": "ProspectSecured,TestScheduled,TestPassed,TestFailed,CreditRated,GuarantorReturned,Activated,VehicleAssigned,ContractEntered,Churned,Deactivated,HPExited"
+    },
+    {
+      "fieldName": "bvn",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "dateOfBirth",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "champion",
+      "relationshipName": "user",
+      "otherEntityField": "login",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "platform",
+      "otherEntityRelationshipName": "champion",
+      "relationshipName": "platform",
+      "otherEntityField": "code"
+    }
+  ],
+  "javadoc": "Champion",
+  "entityTableName": "champion",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["champion"],
+  "databaseType": "sql",
+  "changelogDate": "20220121032104"
+}
