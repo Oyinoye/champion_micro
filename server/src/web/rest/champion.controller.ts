@@ -1,3 +1,4 @@
+import { ProducerService } from './../../service/producer.service';
 import {
     Body,
     ClassSerializerInterceptor,
@@ -20,6 +21,7 @@ import { AuthGuard, Roles, RolesGuard, RoleType } from '../../security';
 import { HeaderUtil } from '../../client/header-util';
 import { Request } from '../../client/request';
 import { LoggingInterceptor } from '../../client/interceptors/logging.interceptor';
+import { ChampionEntity } from '../..//domain/champion.entity';
 
 @Controller('api/champions')
 @UseGuards(AuthGuard, RolesGuard)
@@ -29,7 +31,8 @@ import { LoggingInterceptor } from '../../client/interceptors/logging.intercepto
 export class ChampionController {
     logger = new Logger('ChampionController');
 
-    constructor(private readonly championEntityService: ChampionService) {}
+    constructor(private readonly championEntityService: ChampionService,
+        private readonly producerService: ProducerService) {}
 
     @Get('/')
     @Roles(RoleType.USER)
@@ -71,10 +74,22 @@ export class ChampionController {
     @ApiResponse({ status: 403, description: 'Forbidden.' })
     async post(@Req() req: Request, @Body() championEntityDTO: ChampionDTO): Promise<ChampionDTO> {
         const created = await this.championEntityService.save(championEntityDTO, req.user?.login);
+        console.log('sending message wth topic: "ChampionStateChanged" for new Champion...');
+        this.producerService.produce({
+            topic: 'ChampionStateChanged',
+            messages: [
+                {
+                    value: JSON.stringify(created)
+                },
+            ],
+            
+        })
+        console.log('Data DTO string sent: \n', JSON.stringify(championEntityDTO))
+        console.log('Message sent with topic: ChampionStateChanged; Data:', created)
         HeaderUtil.addEntityCreatedHeaders(req.res, 'Champion', created.id);
         return created;
     }
-
+ 
     @Put('/')
     @Roles(RoleType.ADMIN)
     @ApiOperation({ title: 'Update championEntity' })
@@ -84,8 +99,21 @@ export class ChampionController {
         type: ChampionDTO,
     })
     async put(@Req() req: Request, @Body() championEntityDTO: ChampionDTO): Promise<ChampionDTO> {
+        const updated = await this.championEntityService.update(championEntityDTO, req.user?.login);
+        console.log('sending message wth topic: "ChampionStateChanged" for updated champion...');
+        this.producerService.produce({
+            topic: 'ChampionStateChanged',
+            messages: [
+                {
+                    value: JSON.stringify(updated)
+                },
+            ],
+            
+        })
+        console.log('Data DTO string sent: \n', JSON.stringify(championEntityDTO))
+        console.log('Message sent with topic: ChampionStateChanged; Data:', updated)
         HeaderUtil.addEntityCreatedHeaders(req.res, 'Champion', championEntityDTO.id);
-        return await this.championEntityService.update(championEntityDTO, req.user?.login);
+        return updated
     }
 
     @Put('/:id')
